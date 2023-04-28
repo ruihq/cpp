@@ -6,8 +6,10 @@ int main() {
     
     if (result == IDYES) {
         // user clicked "Yes"
+        MessageBox(NULL, "ok you cool", "cool ending", MB_OK | MB_ICONQUESTION);
     } else {
         // user clicked "No"
+        MessageBox(NULL, "you not cool", "notcoolending", MB_OK | MB_ICONQUESTION);
     }
     return 0;
 }
