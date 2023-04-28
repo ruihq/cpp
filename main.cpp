@@ -1,8 +1,6 @@
-#include <iostream>
-
-using namespace std;
+#include <windows.h>
 
 int main() {
-    cout << "yumi wiredo";
+    MessageBox(NULL, "yumi wiredo", "Title", MB_OK);
     return 0;
 }
