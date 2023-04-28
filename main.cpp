@@ -1,6 +1,14 @@
 #include <windows.h>
 
 int main() {
-    MessageBox(NULL, "yumi wiredo", "Title", MB_OK);
+    HINSTANCE hInstance = GetModuleHandle(NULL);
+    int result = MessageBox(NULL, "Is yumi an wiredo?", "is wired?", MB_YESNO | MB_ICONQUESTION);
+    
+    if (result == IDYES) {
+        // user clicked "Yes"
+    } else {
+        // user clicked "No"
+    }
     return 0;
 }
+
